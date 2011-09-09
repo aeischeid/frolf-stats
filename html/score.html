@@ -16,13 +16,28 @@
 <div data-role="page">
 
 	<div data-role="header">
-		<h1>Hole #</h1>
+		<h1>Hole <span class="holeNumer">#</span></h1>
 	</div><!-- /header -->
 
 	<div data-role="content">
 		<form id="scoreForm">
 			<input type="hidden" name="hole" />
-			<input type="number" id="score" name="score" value="3" />
+			<label for="score">Score</label>
+			<select name="score" id="score">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+			<!--<input type="number" id="score" name="score" value="3" />-->
 			<button type="submit" name="submit" value="Save" >Save</button>
 			
 		</form>
